@@ -1,0 +1,661 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  overflow-x: hidden;
+}
+body .head {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 99px;
+  padding: 20px 162px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #262626;
+}
+body .head .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .head .logo-name .logo {
+  width: 48px;
+  height: 48px;
+}
+body .head .logo-name .logo img {
+  width: 100%;
+  height: 100%;
+}
+body .head .logo-name .title {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+}
+body .head .list {
+  display: flex;
+  list-style-type: none;
+  height: 55px;
+  gap: 30px;
+  align-items: center;
+}
+body .head .list .list1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  padding: 14px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #141414;
+  background: transparent;
+  transition: 0.3s;
+}
+body .head .list .list1:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #141414;
+}
+body .head .list .list1:first-child {
+  border: 1px solid #262626;
+  border-radius: 10px;
+  background-color: #141414;
+}
+body .head .contact-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  background-color: #141414;
+}
+body .head .contact-btn:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #141414;
+}
+body .up-content {
+  display: flex;
+  gap: 80px;
+  position: relative;
+}
+body .up-content .central-link {
+  position: absolute;
+  top: 144px;
+  left: 904px;
+}
+body .up-content .container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 144px 0 144px 162px;
+  width: 50%;
+}
+body .up-content .container1 .cont1-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+body .up-content .container1 .cont1-text .text-large {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 72px;
+}
+body .up-content .container1 .cont1-text .text-small {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .up-content .container1 .cont1-btns {
+  display: flex;
+  gap: 20px;
+}
+body .up-content .container1 .cont1-btns .btn-more {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  background-color: #141414;
+}
+body .up-content .container1 .cont1-btns .btn-more:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #141414;
+}
+body .up-content .container1 .cont1-btns .btn-properties {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #703bf7;
+  line-height: 27px;
+  border: none;
+  border-radius: 10px;
+}
+body .up-content .container1 .cont1-btns .btn-properties:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #703bf7;
+}
+body .up-content .container1 .cont1-btns .btn-properties:hover {
+  border: none;
+}
+body .up-content .container1 .cont1-info {
+  display: flex;
+  gap: 20px;
+}
+body .up-content .container1 .cont1-info .info-element {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 27px;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  cursor: default;
+}
+body .up-content .container1 .cont1-info .info-element:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #1a1a1a;
+}
+body .up-content .container1 .cont1-info .info-element .info-num {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  font-family: "Urbanist";
+  min-width: 190px;
+  line-height: 60px;
+}
+body .up-content .container1 .cont1-info .info-element .info-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .up-content .container2 {
+  width: 50%;
+}
+body .up-content .container2 img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(238.21deg, #2a213f 8.76%, rgba(25, 25, 25, 0) 50.09%);
+}
+body .links {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0px 0px 0px 10px #191919;
+  position: relative;
+  z-index: 1;
+}
+body .links .links-elm {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+body .links .links-elm .icon {
+  width: 82px;
+  height: 82px;
+}
+body .links .links-elm .icon img {
+  width: 100%;
+  height: 100%;
+}
+body .links .links-elm .icon-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+}
+body .links .links-elm .icon-arrow img {
+  width: 100%;
+  height: 100%;
+}
+body .links .links-elm .text {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 30px;
+}
+body .main-content {
+  width: 100%;
+  margin: 150px 0 96px;
+  padding: 0 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+body .main-content .main-elm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body .main-content .main-elm .star-icon {
+  position: absolute;
+  top: -24px;
+  left: -20px;
+}
+body .main-content .main-elm .top-text-p {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-bottom: 80px;
+}
+body .main-content .main-elm .top-text-p .text-p {
+  width: 75%;
+}
+body .main-content .main-elm .top-text-p .text-p .top-sub {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 72px;
+}
+body .main-content .main-elm .top-text-p .text-p .top-text {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .top-text-p .top-btn {
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  height: max-content;
+  align-self: flex-end;
+  border: 1px solid #262626;
+}
+body .main-content .main-elm .top-text-p .top-btn:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #1a1a1a;
+}
+body .main-content .main-elm .element-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+body .main-content .main-elm .element-content .part-house {
+  width: 33%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  background-color: #141414;
+}
+body .main-content .main-elm .element-content .part-house .house-img {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+}
+body .main-content .main-elm .element-content .part-house .house-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+body .main-content .main-elm .element-content .part-house .house-text .house-sub {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 36px;
+}
+body .main-content .main-elm .element-content .part-house .house-text .house-info {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .element-content .part-house .house-text .house-link {
+  color: white;
+}
+body .main-content .main-elm .element-content .part-house .about-house {
+  display: flex;
+  gap: 10px;
+}
+body .main-content .main-elm .element-content .part-house .about-house .about-elm {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 4px;
+  border: 1px solid #262626;
+  border-radius: 28px;
+  background-color: #1a1a1a;
+}
+body .main-content .main-elm .element-content .part-house .about-house .about-elm .about-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .element-content .part-house .price-p {
+  display: flex;
+  gap: 50px;
+}
+body .main-content .main-elm .element-content .part-house .price-p .price .price-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .element-content .part-house .price-p .price .price-sum {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 36px;
+}
+body .main-content .main-elm .element-content .part-house .price-p .price-btn {
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #703bf7;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  background-color: #703bf7;
+}
+body .main-content .main-elm .element-content .part-house .price-p .price-btn:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #703bf7;
+}
+body .main-content .main-elm .element-content .part-rate {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 40px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  width: 33%;
+}
+body .main-content .main-elm .element-content .part-rate .star-part {
+  display: flex;
+  gap: 10px;
+}
+body .main-content .main-elm .element-content .part-rate .star-part .star-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  padding: 10px;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 500;
+  color: yellow;
+  font-family: "Urbanist";
+}
+body .main-content .main-elm .element-content .part-rate .text-part {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 158px;
+}
+body .main-content .main-elm .element-content .part-rate .text-part .rate-sub {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 36px;
+}
+body .main-content .main-elm .element-content .part-rate .text-part .rate-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .element-content .part-rate .user-part {
+  display: flex;
+  gap: 12px;
+}
+body .main-content .main-elm .element-content .part-rate .user-part .user-image {
+  width: 60px;
+  height: 60px;
+}
+body .main-content .main-elm .element-content .part-rate .user-part .user-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+body .main-content .main-elm .element-content .part-rate .user-part .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+body .main-content .main-elm .element-content .part-rate .user-part .user-info .user-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 30px;
+}
+body .main-content .main-elm .element-content .part-rate .user-part .user-info .user-region {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+}
+body .main-content .main-elm .element-content .part-question {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  width: 33%;
+}
+body .main-content .main-elm .element-content .part-question .question {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 36px;
+  min-height: 72px;
+}
+body .main-content .main-elm .element-content .part-question .answer {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+  letter-spacing: -0.006em;
+}
+body .main-content .main-elm .element-content .part-question .answer-btn {
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  height: max-content;
+  align-self: flex-end;
+  border: 1px solid #262626;
+}
+body .main-content .main-elm .element-content .part-question .answer-btn:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #1a1a1a;
+}
+body .main-content .main-elm .navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #262626;
+}
+body .main-content .main-elm .navigation .pages {
+  font-size: 20px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 30px;
+}
+body .main-content .main-elm .navigation .pages .page1 {
+  color: white;
+}
+body .main-content .main-elm .navigation .nav-btns {
+  display: flex;
+  gap: 10px;
+}
+body .main-content .main-elm .navigation .nav-btns .nav-btn {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  padding: 14px;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+}
+body .foot .f-container1 {
+  width: 100%;
+  height: 367px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 162px;
+  border: 1px solid #262626;
+  border-right: none;
+  border-left: none;
+  overflow: hidden;
+  position: relative;
+}
+body .foot .f-container1 .design-left {
+  position: absolute;
+  top: 59px;
+  left: -20px;
+  z-index: -1;
+}
+body .foot .f-container1 .design-right {
+  position: absolute;
+  top: 36px;
+  right: -92px;
+  z-index: -1;
+}
+body .foot .f-container1 .text-p {
+  width: 71%;
+}
+body .foot .f-container1 .text-p .sub {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 72px;
+}
+body .foot .f-container1 .text-p .text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  font-family: "Urbanist";
+  line-height: 27px;
+  margin-top: 14px;
+}
+body .foot .f-container1 .f-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: "Urbanist";
+  line-height: 27px;
+  padding: 18px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #703bf7;
+  line-height: 27px;
+  border: none;
+  border-radius: 10px;
+}
+body .foot .f-container1 .f-btn:hover {
+  transition: 0.3s;
+  border: 1px solid #262626;
+  background-color: #703bf7;
+}
+body .foot .f-container1 .f-btn:hover {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
