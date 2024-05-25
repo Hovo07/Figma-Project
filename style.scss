@@ -100,6 +100,7 @@ body {
       gap: 60px;
       padding: 144px 0 144px 162px;
       width: 50%;
+      background-color: $bgColor;
       .cont1-text {
         display: flex;
         flex-direction: column;
@@ -159,7 +160,8 @@ body {
     }
     .container2 {
       width: 50%;
-      img {
+      position: relative;
+      .building {
         width: 100%;
         height: 100%;
         background: linear-gradient(
@@ -168,11 +170,28 @@ body {
           rgba(25, 25, 25, 0) 50.09%
         );
       }
+      .lines {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        img {
+          width: 100%;
+          height: 100%;
+          padding: 1.3px 0.92px 1.31px 0.85px;
+          gap: 0px;
+          opacity: 0px;
+          object-fit: contain;
+        }
+      }
     }
   }
   .links {
     display: flex;
     padding: 20px;
+    background-color: $bgColor;
     gap: 20px;
     border: 1px solid $headColor;
     box-shadow: 0px 0px 0px 10px #191919;
@@ -501,7 +520,7 @@ body {
         .text {
           @include fontStyle(18px, 500, $grayCol);
           line-height: 27px;
-          margin-top: 14px
+          margin-top: 14px;
         }
       }
       .f-btn {
@@ -512,6 +531,105 @@ body {
         border-radius: 10px;
         &:hover {
           border: none;
+        }
+      }
+    }
+    .f-container2 {
+      display: flex;
+      gap: 80px;
+      padding: 100px 162px;
+      .cont2-elm1 {
+        width: 538px;
+        .f-logo-name {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .f-logo {
+            width: 48px;
+            height: 48px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .f-title {
+            @include fontStyle(30px, 500, white);
+          }
+        }
+        .f-input-p {
+          .f-input {
+            width: 423px;
+            @include fontStyle(18px, 500, $grayCol);
+            line-height: 27px;
+            padding: 18px 24px;
+            border: 1px solid $borderColor;
+            border-radius: 12px;
+            margin-top: 30px;
+            background: transparent;
+            &:focus {
+              outline: 1px solid $borderColor;
+            }
+          }
+        }
+      }
+      .cont2-elm2 {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        .list {
+          list-style-type: none;
+          .list1 {
+            padding: 10px 0;
+            @include fontStyle(18px, 500, white);
+            line-height: 24px;
+          }
+          .list1-1 {
+            padding-bottom: 20px;
+            font-size: 20px;
+            color: $grayCol;
+          }
+        }
+      }
+    }
+    .f-container3 {
+      display: flex;
+      justify-content: space-between;
+      background-color: $headColor;
+      align-items: center;
+      padding: 16px 162px;
+      border-top: 1px solid $borderColor;
+      .terms {
+        display: flex;
+        gap: 38px;
+        padding: 10px 0;
+        .date {
+          @include fontStyle(18px, 500, white);
+          line-height: 24px;
+        }
+        .term {
+          @include fontStyle(18px, 500, white);
+          line-height: 24px;
+        }
+      }
+      .social-media {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0;
+        .social-btn {
+          width: 52px;
+          height: 52px;
+          padding: 14px;
+          border: none;
+          background-color: $bgColor;
+          border-radius: 50%;
+          @include fontStyle(24px, 100, white);
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background-color: white;
+            color: $bgColor;
+            transition: 0.3s;
+          }
         }
       }
     }
